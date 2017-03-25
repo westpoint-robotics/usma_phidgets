@@ -14,4 +14,4 @@ Instructions to use the Phidgets 1044 IMU
 - `rospack profile`
 - You can now launch the node: `roslaunch usma_phidgets imu.launch`
 
-#### For documentation regarding nodes, topics, etc visit the [ROS Wiki](http://ros.org/wiki/phidgets_drivers)
+#### For documentation regarding nodes and topics, view the package summary on [ROS Wiki](http://ros.org/wiki/phidgets_drivers).
