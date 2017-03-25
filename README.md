@@ -1,4 +1,6 @@
-# usma_phidgets
+# ---Work in progress---
+
+## usma_phidgets
 Instructions to use the Phidgets 1044 IMU
 
 ### Installing from binary files:
