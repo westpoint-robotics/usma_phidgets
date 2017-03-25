@@ -7,9 +7,9 @@ Instructions to use the Phidgets 1044 IMU
 - `echo 'SUBSYSTEMS=="usb", ACTION=="add", ATTRS{idVendor}=="06c2", ATTRS{idProduct}=="00[3-a][0-f]", MODE="666"' >> /etc/udev/rules.d/99-phidgets.rules`
 - `udevadm control --reload-rules`
 - Exit from su mode: `exit`
-- Navigate to root of catkin workspace: `cd ~/catkin_ws/src` 
+- Navigate to source of catkin workspace: `cd ~/catkin_ws/src` 
 - Download our package: `git clone https://github.com/westpoint-robotics/usma_phidgets`
-- Change directories to the root of your Catkin Workspace by typing  `cd ~/catkin_ws`
+- Change directories to the root of your Catkin Workspace: `cd ~/catkin_ws`
 - `catkin_make`
 - `rospack profile`
 - You can now launch the node: `roslaunch usma_phidgets imu.launch`
