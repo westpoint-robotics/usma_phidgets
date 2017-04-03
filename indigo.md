@@ -1,5 +1,3 @@
-# ---Work in progress---
-
 ### Installing from binary files:
 - Install the Phidgets packages and one associated filter: `sudo apt-get install ros-indigo-phidgets-api ros-indigo-phidgets-drivers ros-indigo-phidgets-imu ros-indigo-imu-filter-madgwick`
 - Switch to super user mode in order to update Udev rules: `sudo su`
