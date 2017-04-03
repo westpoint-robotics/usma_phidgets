@@ -3,17 +3,9 @@
 ## usma_phidgets
 Instructions to use the Phidgets 1044 IMU
 
-### Installing from binary files:
-- Install the Phidgets packages and one associated filter: `sudo apt-get install ros-kinetic-phidgets-api ros-kinetic-phidgets-drivers ros-kinetic-phidgets-imu ros-kinetic-imu-filter-madgwick`
-- Switch to super user mode in order to update Udev rules: `sudo su`
-- `echo 'SUBSYSTEMS=="usb", ACTION=="add", ATTRS{idVendor}=="06c2", ATTRS{idProduct}=="00[3-a][0-f]", MODE="666"' >> /etc/udev/rules.d/99-phidgets.rules`
-- `udevadm control --reload-rules`
-- Exit from su mode: `exit`
-- Navigate to source of catkin workspace: `cd ~/catkin_ws/src` 
-- Download our package: `git clone https://github.com/westpoint-robotics/usma_phidgets`
-- Change directories to the root of your Catkin Workspace: `cd ~/catkin_ws`
-- `catkin_make`
-- `rospack profile`
-- You can now launch the node: `roslaunch usma_phidgets imu.launch`
+Click on the link corresponding to your version of ROS:
+### 1. [Indigo](https://github.com/westpoint-robotics/usma_phidgets/blob/master/indigo.md) Igloo users
+### 2. [Kinetic](https://github.com/westpoint-robotics/usma_phidgets/blob/master/kinetic.md) Kame users
+
 
 #### For documentation regarding nodes and topics, view the package summary on [ROS Wiki](http://ros.org/wiki/phidgets_drivers).
