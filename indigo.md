@@ -13,7 +13,7 @@
 - `rospack profile`
 - You can now launch the node: `roslaunch usma_phidgets imu.launch`
 
-
+#### Troubleshooting
 Some robot computers may not be able to locate the phidgets packages. To solve this add the ROS repositories using the following commands:
 ```
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
