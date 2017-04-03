@@ -1,8 +1,3 @@
-# ---Work in progress---
-
-## usma_phidgets
-Instructions to use the Phidgets 1044 IMU
-
 ### Installing from binary files:
 - Install the Phidgets packages and one associated filter: `sudo apt-get install ros-kinetic-phidgets-api ros-kinetic-phidgets-drivers ros-kinetic-phidgets-imu ros-kinetic-imu-filter-madgwick`
 - Switch to super user mode in order to update Udev rules: `sudo su`
@@ -16,4 +11,10 @@ Instructions to use the Phidgets 1044 IMU
 - `rospack profile`
 - You can now launch the node: `roslaunch usma_phidgets imu.launch`
 
-#### For documentation regarding nodes and topics, view the package summary on [ROS Wiki](http://ros.org/wiki/phidgets_drivers).
+#### Troubleshooting
+Some robot computers may not be able to locate the phidgets packages. To solve this add the ROS repositories using the following commands:
+```
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+sudo apt-get update
+```
