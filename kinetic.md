@@ -10,6 +10,7 @@
 - `catkin_make`
 - `rospack profile`
 - You can now launch the node: `roslaunch usma_phidgets imu.launch`
+- If you wish to add other scripts to enhance the data returned by the IMU, place them in the `src` sub-folder. Currently, there's a filter in that location. 
 
 #### Troubleshooting
 Some robot computers may not be able to locate the phidgets packages. To solve this add the ROS repositories using the following commands:
