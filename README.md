@@ -1,5 +1,3 @@
-# ---To be validated---
-
 ## usma_phidgets
 Instructions to use the [Phidgets 1044](http://www.phidgets.com/products.php?product_id=1044) IMU
 
